@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang ="en">
+<head>
+    <meta charset = "UTF-8">
+    <meta http equiv = "X-UA-Compatible" content = "IE=edge">
+    <meta name = "vieweport" content ="width = device-width, initial-scale=1.0">
+    <title>Shashwat Sharma - Personal portfolio</title>
+    <link rel="stylesheet" href = "Style.css">
+    <script src="https://kit.fontawesome.com/ce4baceeeb.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<!--------------------------------------------------------------- Header------------------------------------------------------------------------->
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="Images/logo.jpg" class = "logo">
+            <ul id ="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#cp">Competitive Programming</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fa-regular fa-circle-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>Second year undergraduate at Amity University, Noida</p>
+            <h1>Hi! I am Shashwat Sharma.</h1> 
+        </div>
+    </div>
+</div>
+<!-- ------------------------------------------------------------About------------------------------------------------------------------------ -->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <h1 class="sub-title"><center><U>About me</U></center></h1>   
+                <p><center>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+                    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</center></p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Languages:</span><br>C/C++, HTML,CSS</li>
+                            <li><span>Technical Skills:</span><br>Data structures and Algorithms, Problem Solving</li>
+                            <li><span>DevOps:</span><br>Git, Azure, Terraform</li>
+                            <li><span>Machine Learning:</span><br>Regression models - Linear,Polynomial,SVR<br> Classification models - Logistic, KNN, SVM,Kernel SVM<br>Deep Learning: LSTM</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>May 2022 - October 2022</span>
+                                <br>DevOps intern at <b>Alyssum Global Services</b><br>
+                                <p>During my internship I worked on: </p><br>
+                                <ul>
+                                    <li>1. Infrastructure deployment using Azure Resource Manager,CoudFormation and Terraform templates</li>
+                                    <li>2. Using function apps for automating backups</li>
+                                    <li>3. Azure Synapse deployment pipeline alerts and Log Analytics</li>
+                                    <li>4. Architecture and DB backups documentation</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2021-2025:</span><br>Bachelors in Information Technology from Amity University, Noida (Current CGPA: 9.24)</li>
+                            <li><span>2021:</span><br>Class 12 from Maharishi Vidya Mandir (CBSE), Noida with 95.8%</li>
+                            <li><span>2019:</span><br>Class 12 from Maharishi Vidya Mandir (CBSE), Noida with 95.6%</li>
+                        </ul>
+                    </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- \----------------------------------------------------Competitive programming---------------------------------------------------------------->
+<div id ="cp">
+    <div class="container">
+        <h1 class="sub-title"><center><U>Competitive Programming</U></center></h1>
+        <div class = "cp-list">
+            <div>
+                <i class="fa-solid fa-code"></i><br>
+                <a href="https://www.codechef.com/users/shashwat_12304" class = "cp_subheading2">
+                    <img src="Images/codechef.jpg" class = "codechef">
+                </a>
+                <h2 class = "cp_subheading">Codechef</h2><br>
+            </div>
+            <div>
+                <i class="fa-sharp fa-solid fa-crop"></i><br>
+                <a href="https://codeforces.com/profile/shashwat12304" class = "cp_subheading2">
+                    <img src="Images/Codeforces.jpg" class = "codechef">
+                </a>
+                <h2 class = "cp_subheading">Codeforces</h2><br>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ------------------------------------------------------------Projects------------------------------------------------------------------------->
+<div id="projects">
+    <div class="container">
+        <h1 class="sub-title"><center><U>Projects</U></center></h1>
+        <div class="project-list">
+            <div class="project">
+                <img src="Images/Stockmarket.jpg">
+                <div class="layer">
+                    <h3>Stock market prediction</h3><br>
+                    <p>Using LSTM deep learning model</p>
+                    <a href="https://www.kaggle.com/code/shashwatsharma12304/serb-hackathon-shashwat-sharma">
+                        <i class="fa-solid fa-link"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="project">
+                <img src="Images/Rockvsmine.jpg">
+                <div class="layer">
+                    <h3>Rock vs mine prediction</h3><br>
+                    <p>Using Logistic regression</p>
+                    <a href="https://colab.research.google.com/drive/1pmiOVj_2mNHcqfW1ix2K5VPp3z_Jc0Sj">
+                        <i class="fa-solid fa-link"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="project">
+                <img src="Images/pp.JPG">
+                <div class="layer">
+                    <h3>Personal portfolio website</h3><br>
+                    <p>Using HTML, CSS and Javascript</p>
+                    <a href="file:///C:/Users/ACER/Documents/Portfolio_website/Index.html">
+                        <i class="fa-solid fa-link"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!------------------------------------------------------------Contacts Section------------------------------------------------------------------->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class = "sub-title"><center>Contact Me</center></h1>
+                <p><i class="fa-sharp fa-solid fa-paper-plane"></i>shashwatsharma12304@gmail.com</p>
+                <p><i class="fa-solid fa-square-phone"></i>9910204981</p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/shashwat-sharma-708206215/"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://www.instagram.com/shashwat12304/"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+                <a href="Images/Resume_AbhishekSrivastava.pdf" download class ="btn btn2">Download Resume</a>
+            </div>
+            <div class="contact-right">
+                <form name = "submit-to-google-sheet">
+                    <input type="text" name ="Name" placeholder="Your name" required>
+                    <input type="email" name ="email" placeholder="Your Email" required>
+                    <textarea name="Message" rows ="6" placeholder="Your message"></textarea>
+                    <button type="submit" class="btn3"> Submit</button>
+                </form>
+                <span id ="msg"></span>
+            </div>
+        </div>
+    </div>
+</div>
+<!------------------------------------------------------------- Javascript----------------------------------------------------------------------->
+<script>
+
+   var tablinks = document.getElementsByClassName("tab-links");
+   var tabcontents = document.getElementsByClassName("tab-contents");
+   
+   function opentab(tabname){
+      for(tablink of tablinks){
+        tablink.classList.remove("active-link");
+      }
+      for(tabcontent of tabcontents){
+        tabcontent.classList.remove("active-tab");
+      }
+      event.currentTarget.classList.add("active-link"); 
+      document.getElementById(tabname).classList.add("active-tab");
+   }
+</script>
+<script>
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+</script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbwB5eH90OYOBmJUpRXz6NuOWfPNPGVcGApW34oowk0uIwgTjbb2A1TeS-oYgvqfsnlM/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent succesfully!"
+            setTimeout(function(){
+                msg.innerHTML=""
+            },5000)
+            form.reset()
+
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
